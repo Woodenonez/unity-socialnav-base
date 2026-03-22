@@ -1,0 +1,37 @@
+### In each ws, there are also gitignore files, which should contain the same content as this one (maybe more).
+
+# Project specific
+/datasets
+/results
+
+# ROS related
+build/
+install/
+log/
+
+# Unity related
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+.utmp/
+
+*.csproj
+*.unityproj
+*.sln
+*.slnx
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.log
+
+# Other
+.mypy_cache/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
