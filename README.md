@@ -1,4 +1,4 @@
-# Test Project for Social Navigation with ROS2 and Unity
+# Social Navigation with ROS2 and Unity (Trial)
 
 ## Project Structure
 There are three main parts of this project:
@@ -15,12 +15,12 @@ https://github.com/Unity-Technologies/ROS-TCP-Connector.git?path=/com.unity.robo
 ```
 After completing the installation, a new menu item `Robotics` will appear. In the `Robotics > ROS Settings`, set protocol to `ROS2`. The IP address should be `127.0.0.1` and the port should be `10000` (for local connection). 
 
-Add Empty GameObject and name it to `ROSConnection`, add component named `ROS Connection`. Check settings such as IP address and port number. After clicking play, ROS 2 connection mark should be visible in the top left corner of the Game view.
+Add an Empty GameObject and name it `ROSConnection`, add a component named `ROS Connection`. Check settings such as IP address and port number. After clicking play, the ROS 2 connection mark should be visible in the top left corner of the Game view.
 3. (Optional) Similar to the previous step, import the URDF package into the Unity project. In the `Package Manager`, click the `+` button and select `Install package from git URL`, enter the following URL:
 ```
 https://github.com/Unity-Technologies/URDF-Importer.git?path=/com.unity.robotics.urdf-importer#v0.5.2
 ```
-4. The pedestrian uses preset prefabs which requires downloading the [Starter Assets - ThirdPerson | URP](https://assetstore.unity.com/packages/p/starter-assets-thirdperson-urp-196526) from the Unity Asset Store. After importing it to the project, under `Assets > Agents`, the prefab `Ped` is ready to be used.
+4. The pedestrian uses preset prefabs, which require downloading the [Starter Assets - ThirdPerson | URP](https://assetstore.unity.com/packages/p/starter-assets-thirdperson-urp-196526) from the Unity Asset Store. After importing it into the project, the prefab `Ped` is ready to use under' Assets> Agents'.
 5. Go to `Assets > Scripts > Agents` and drag `PedestrianAgent.cs` and `SendPedDestination.cs` to the Ped object. Figure out how they work.
 ### Prepare ROS2 Environment
 1. Install ROS2 (Jazzy) and the necessary dependencies:
@@ -41,3 +41,6 @@ source install/setup.bash
 ros2 run ros_tcp_endpoint default_server_endpoint --ros-args -p ROS_IP:=127.0.0.1
 ```
 It should show a message indicating that the connection is established.
+
+## Scenes
+Currently, there are two scenes: Sample and Test scenes. In the sample scene, all supported robots are added, with a pedestrian agent. In the test scene, a lab floor is added.
