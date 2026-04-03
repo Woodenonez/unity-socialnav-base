@@ -37,7 +37,7 @@ After completing the installation, a new menu item `Robotics` will appear. In th
 
 Add Empty GameObject and name it to `ROSConnection`, add component named `ROS Connection`. Check settings such as IP address and port number. After clicking play, ROS 2 connection mark should be visible in the top left corner of the Game view.
 
-On the other hand, go to `ws_ros2`, clone the ROS TCP Endpoint repository, and build the ROS2 package:
+On the other hand, go to `ws_ros`, clone the ROS TCP Endpoint repository, and build the ROS2 package:
 ```bash
 cd src
 git clone -b main-ros2 https://github.com/Unity-Technologies/ROS-TCP-Endpoint.git
